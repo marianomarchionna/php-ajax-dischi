@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* FINE COMMON */
+/* HEADER */
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #2e3a46;
+}
+
+.img-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo img {
+    height: 70%;
+}
+/* FINE HEADER */
+/* MAIN */
+main {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: #1e2d3b;
+}
+
+.songs-container {
+    width: 70%;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-song {
+    text-align: center;
+    width: calc(100% / 5 - 10px);
+    min-height: 250px;
+    min-width: 170px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e3a46;
+}
+
+.image {
+    width: 150px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.author, .year{
+    color: gray;
+    font-size: 12px;
+}
