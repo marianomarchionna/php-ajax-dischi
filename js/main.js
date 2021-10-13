@@ -10,7 +10,6 @@ const app = new Vue(
                 .get('http://localhost/esercizi/php-ajax-dischi/api/server.php')
                 .then((response) =>{
                     this.songs = response.data;
-                    console.log(songs);
                 })
         }
     }
