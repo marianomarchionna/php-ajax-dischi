@@ -18,11 +18,17 @@
         <header>
             <div class="img-logo">
                 <img src="img/logo.png" alt="logo spotify">
+                <form> 
+                    <select name="" id="" v-model="selectValue" @change="filtered">
+                        <option value="">All</option>
+                        <option v-for="genre in genres" :value="genre"> {{ genre }} </option>
+                    </select>
+                </form>
             </div>
         </header>
         <main>
             <div class="songs-container">
-                    <div v-for="song in songs" class='single-song'>
+                    <div v-for="song in filteredSongs" class='single-song'>
                         <div class='image'>
                             <img :src="song.poster" :alt="song.title">
                             <h3 class='title'>

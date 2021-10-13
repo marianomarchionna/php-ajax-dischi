@@ -19,10 +19,15 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .img-logo img {
     height: 70%;
+}
+
+form {
+    margin-right: 20px;
 }
 /* FINE HEADER */
 /* MAIN */
@@ -50,7 +55,6 @@ main {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #2e3a46;
 }
@@ -61,6 +65,7 @@ main {
 
 .image img {
     width: 100%;
+    margin: 10px 0;
 }
 
 .title {
