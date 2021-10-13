@@ -1,7 +1,3 @@
-<?php 
-    
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,23 +24,22 @@
         </header>
         <main>
             <div class="songs-container">
-                    <div v-for="song in filteredSongs" class='single-song'>
-                        <div class='image'>
-                            <img :src="song.poster" :alt="song.title">
-                            <h3 class='title'>
-                                {{song.title}}
-                            </h3>
-                            <div>
-                                <span class='author'>
-                                    {{song.author}}  
-                                </span>
-                                <span class='year'>
-                                    {{song.year}} 
-                                </span>
-                            </div>
+                <div v-for="song in filteredSongs" class='single-song'>
+                    <div class='image'>
+                        <img :src="song.poster" :alt="song.title">
+                        <h3 class='title'>
+                            {{song.title}}
+                        </h3>
+                        <div>
+                            <span class='author'>
+                                {{song.author}}  
+                            </span>
+                            <span class='year'>
+                                {{song.year}} 
+                            </span>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </main>
     </div>

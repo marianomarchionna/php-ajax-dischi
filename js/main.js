@@ -13,6 +13,7 @@ const app = new Vue(
                 .get('api/server.php')
                 .then(response => {
                     this.songs = response.data;
+                    this.filteredSongs = this.songs;
                     for (let i = 0; i < this.songs.length; i++) {
                         if(!this.genres.includes(this.songs[i].genre)) {
                             this.genres.push(this.songs[i].genre);
@@ -20,7 +21,7 @@ const app = new Vue(
                     }
                 });   
         },
-        computed: {
+        methods: {
             filtered() {
                 if (this.selectValue == '') {
                     return this.filteredSongs = this.songs;
